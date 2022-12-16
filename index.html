@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"/>
+    <link rel="stylesheet" href="customAlert/alert.css">
+    <link rel="stylesheet" href="style.css">
+
+    <script src="customAlert/alert.js" defer></script>
+    <script src="js/words.js" defer></script>
+    <script src="js/main.js" defer></script>
+
+    <title>Word Scramble</title>
+</head>
+<body>
+    <div class="container">
+        <h2>Word Scramble</h2>
+        <div class="content">
+            <p class="word">torse</p>
+            <div class="details">
+                <p class="hint">Hint: <span>A large shop</span></p>
+                <p class="time">Time Left: <span><b>20</b>s</span></p>
+            </div>
+            <input type="text" placeholder="Guess the word" id="inputField">
+            <div class="buttons">
+                <button class="refresh">Refresh Word</button>
+                <button class="check">Check Word</button>
+            </div>
+        </div>
+    </div>
+    <div class="alert">
+        <div class="alert-content">
+            <i class="fa-solid fa-check icon"></i>
+
+            <div class="message">
+                <span class="text alert-title">Success</span>
+                <span class="text alert-text">Your changes has been saved</span>
+            </div>
+        </div>
+        <i class="fa-solid fa-xmark close"></i>
+        <div class="progress"></div>
+    </div>
+</body>
+</html>
